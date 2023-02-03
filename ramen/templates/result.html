@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table table-striped table-hover">
+    <tr>
+        <th>店名</th>
+        <th>住所</th>
+        <th>wifi</th>
+    </tr>
+    {% for search in searchs %}
+    <tr>
+        <td>{{ search['name'] }}</td>
+        <td>{{ search['address'] }}</td>
+        <td>{{ search['wifi'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
