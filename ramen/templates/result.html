@@ -9,7 +9,7 @@
     {% for search in searchs %}
     <tr>
         <td>{{ search['name'] }}</td>
-        <td>{{ search['address'] }}</td>
+        <td><a href="https://www.google.co.jp/maps/place/{{ search['address'] }}">{{ search['address'] }}</a></td>
         <td>{{ search['wifi'] }}</td>
     </tr>
     {% endfor %}
